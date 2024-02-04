@@ -1,0 +1,49 @@
+{
+  "project_info": {
+    "project_number": "892590098114",
+    "firebase_url": "https://finalproject-omfm-default-rtdb.firebaseio.com",
+    "project_id": "finalproject-omfm",
+    "storage_bucket": "finalproject-omfm.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892590098114:android:fa22da76db815632309d5b",
+        "android_client_info": {
+          "package_name": "com.example.final_pro"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDekOgADFTDnwsS36IRYhhkVnp2iZmlbPI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:892590098114:android:f6bbc0931a329885309d5b",
+        "android_client_info": {
+          "package_name": "com.example.final_project1"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDekOgADFTDnwsS36IRYhhkVnp2iZmlbPI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
