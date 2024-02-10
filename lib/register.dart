@@ -29,17 +29,35 @@ class _RegisterPageState extends State<RegisterPage> {
       await FirebaseAuth.instance.createUserWithEmailAndPassword(
         email: emailController.text,
         password: passwordController.text,
+
       );
+      // Properly formatted Map for f_type
+      Map<String, bool> foodPreferences = {
+        'grilled_food': false,
+        'salad': false,
+        'animals_product': false,
+        'sea_food': false,
+        'honey': false,
+        'meat_and_rice': false,
+        'sandwich': false,
+        'traditional_food': false,
+        'dates': false,
+        'steamed_food': false,
+        'oils': false,
+      };
+
       // إضافة بيانات المستخدم إلى Firestore
       await FirebaseFirestore.instance.collection('users').doc(userCredential.user!.uid).set({
         'name': nameController.text,
         'email': emailController.text,
         'password': passwordController.text,
         'phone': '',
-        'region': '',
+        'region': 'Riyadh',
         'avatar': '',
         'social': '',
         'description': '',
+        'f_type' : foodPreferences,
+
         // يمكن إضافة معلومات إضافية هنا إذا لزم الأمر
       });
 
@@ -141,7 +159,7 @@ class _RegisterPageState extends State<RegisterPage> {
                       onPressed: () {
                         if (_formKey.currentState!.validate()) { // Check if the form is valid
                           _register();
-                          navigationProvider.changePage(0);
+                          navigationProvider.changePage(1);
                         }
                       },
                     ),
